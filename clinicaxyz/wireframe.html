@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Limeira</title>
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /* Estilo rápido para o novo header */
+        header {
+            background-color: #eee;
+            padding: 30px 0;
+            text-align: center;
+  
+        }
+
+        header img {
+            /*max-width: 250px;*/
+            height: auto;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .home {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .cards-grid a {
+            text-decoration: none;
+            color: #000;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 1rem 0 0.5rem;
+        }
+        .card p {
+            padding: 0 1rem 1rem;
+            font-size: 0.95rem;
+        }
+        footer {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .footer-social a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="imagens/imagem_logo.png" alt="Logo Empresa de Limeira">
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Bem-vindo ao site Empresa de Limeira</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corrupti iure quam cupiditate, iste,
+                maiores quis, similique amet voluptatem alias sed nesciunt. At cum fugit id exercitationem, in eius
+                nostrum?</p>
+        </section>
+
+        <section class="cards-grid">
+            <a href="#">
+                <div class="card">
+                    <img src="imagens/imagem.png" alt="">
+                    <h3>Sobre a empresa</h3>
+                    <p>Quem somos, história, missão, visão e valores da empresa</p>
+                </div>
+            </a>
+            <div class="card">
+                <img src="imagens/imagem.png" alt="">
+                <h3>Produtos</h3>
+                <p>Relação de produtos separados por categorias</p>
+            </div>
+            <div class="card">
+                <img src="imagens/imagem.png" alt="">
+                <h3>Serviços</h3>
+                <p>Lista de serviços em formato de tabelas de preços</p>
+            </div>
+            <div class="card">
+                <img src="imagens/imagem.png" alt="">
+                <h3>Clientes</h3>
+                <p>Lista de clientes importantes separados por segmento</p>
+            </div>
+            <div class="card">
+                <img src="imagens/imagem.png" alt="">
+                <h3>Galeria de fotos</h3>
+                <p>Galeria de fotos com miniaturas e foto em destaque</p>
+            </div>
+            <div class="card">
+                <img src="imagens/imagem.png" alt="">
+                <h3>Vídeos</h3>
+                <p>Vídeos em HTML ou incorporados do Youtube</p>
+            </div>
+            <div class="card">
+                <img src="imagens/imagem.png" alt="">
+                <h3>Contato</h3>
+                <p>Formulário de contato e mapa de localização</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/imagem.png" alt="">
+                <h3>FAQ</h3>
+                <p>Frequently Asked Questions ou perguntas frequentes</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                &copy; 2024 - Cidade de Limeira | Créditos
+            </div>
+            <div class="footer-social_">
+                <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

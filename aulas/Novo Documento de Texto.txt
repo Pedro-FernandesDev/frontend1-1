@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+
+Meta é a tag
+charset é atributo (especificação ou complemento da tag)
+
+<head> title 65 caracteres, description 150 caracteres
+
+PascalCase TesteDeMesa
+camelCase  TesteDeMesa
+snake_case teste_de_mesa
+           teste-de-mesa
+
+Shift + Alt + F : Organiza o código           

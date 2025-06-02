@@ -34,6 +34,15 @@ footer {
     color: #777;
 }
 
+/* Formatação genérica para os links */
+a{
+    text-decoration: none;      /* retirar o sublinhado dos links */
+    color: #492291;           /* alterar a cor dos links */
+}
+a:hover{
+    text-decoration: underline;     /* volta o sublinhado quando passar o mouse em cima */
+}
+
 /* Formatação da Home */
 
 main {
@@ -180,3 +189,142 @@ h2 {
         /* Cor para o TikTok */
     }
 }
+
+
+/* Link voltar do rodapé das páginas */
+.voltar{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Formatação do grid de clínica */
+.grid-clinica{
+    display: flex;      /* opção por layout em grid (grade). O padrão para o display é block */
+    justify-content: space-between;     /* alinha pelas margens externas (direita e esquerda) */
+    gap: 1.5rem;
+    align-items: flex-start;
+    div{
+        flex-grow: 1;       /* permite expandir a largura */
+        flex-shrink: 1;     /* permite reduzir a largura */
+        flex-basis: 300px;  /* tamanho inicial */
+    }
+    img{
+        width: 100%;        /* imagem responsiva */
+    }
+    h2{
+        text-align: start;      /* alinha à esquerda */
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+    p{
+        line-height: 150%;      /* Altura da linha ou espaçamento entre linhas */
+        margin-bottom: 15px;    /* Margem inferior */
+    }
+    ul,ol{
+        padding-left: 20px;
+        list-style:square;
+        li{
+            line-height: 170%;
+        }
+    }
+}
+
+.foto-clinica-esquerda{
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.foto-clinica-direita{
+    width: 300px;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+/* Formatação das tabelas */
+
+table{
+    width: 100%;
+    border-collapse: collapse;      /* Junta as bordas em uma só */
+}
+th{
+    text-align: start;      /* alinhamento a esquerda */
+}
+
+
+.tabela1 th{
+    background-color: #aaa;
+    border: 2px solid #aaa;
+    padding: 8px;
+}
+.tabela1 td{
+    border: 2px solid #ccc;
+    padding: 8px;
+}
+.tabela1 th:nth-child(3),
+.tabela1 td:nth-child(3){    /* pseudo seletor */
+    text-align: end;
+    font-weight: 500;
+}
+.tabela1 th:nth-child(4),
+.tabela1 td:nth-child(4){    /* pseudo seletor */
+    text-align: center;
+}
+.tabela1 tr:nth-child(even){        /* even = par, odd = ímpar */
+    color: green;
+}
+
+
+
+/* tabela 2 */
+
+.tabela2 th {
+    border-bottom: 3px solid #aaa;
+}
+
+.tabela2 td {
+    border-bottom: 1px solid #ccc;
+}
+
+.tabela2 th:nth-child(2n+3),
+.tabela2 td:nth-child(2n+3) {
+    text-align: end;
+}
+
+.tabela2 th:nth-child(2n+4),
+.tabela2 td:nth-child(2n+4) {
+    text-align: center;
+}
+
+/* Formatação da terceira coluna */
+td:nth-child(3),
+th:nth-child(3) {
+    /* background-color: lightblue; */
+}
+/* tabela 3 */
+
+.tabela3 tr:nth-child(odd)
+
+/* even = par / odd = ímpar */
+    {
+    background-color: #ccc;
+}
+
+.tabela3 th:nth-child(2n+3),
+.tabela3 td:nth-child(2n+3) {
+    text-align: end;
+}
+
+.tabela3 th:nth-child(2n+4),
+.tabela3 td:nth-child(2n+4) {
+    text-align: center;
+}
+
+
+
+
+
+
+
